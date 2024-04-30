@@ -4,7 +4,7 @@ name: My first workflow
 on:
 - push
 
-job:
+jobs:
   # name of may job
   my-first-job:
     #runner
