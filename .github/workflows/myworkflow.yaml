@@ -6,7 +6,7 @@ on:
 
 job:
   # name of may job
-  my-first-job
+  my-first-job:
     #runner
     runs-on: ubuntu-latest
 
