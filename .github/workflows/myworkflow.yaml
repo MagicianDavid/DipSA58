@@ -16,3 +16,6 @@ jobs:
       run: echo "hello, Github Action $(date)"
     - name: echo the git branch
       run: echo "hello, Github branch is ${{github.ref_name}}, ${{github.repositoryUrl}}"
+    - name:  checkout code
+      uses: actions/checkout@v3
+      run: trivy fs -s HIGH,CRITICAL .
